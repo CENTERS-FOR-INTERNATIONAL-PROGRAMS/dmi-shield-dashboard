@@ -22,9 +22,8 @@ jobs:
           sudo rm -rf dist
           sudo rm package-lock.json
           sudo rm -rf node_modules
-          sudo git stash
           sudo git pull
           sudo npm install
-          ng build --configuration production
+          sudo ng build --configuration production
           sudo cp -rf . /var/deploy_dashboard/
           echo "SHIELD Dashboard is upto date! Deployment successful."
