@@ -25,5 +25,5 @@ jobs:
           sudo git pull
           sudo npm install
           sudo ng build --configuration production
-          sudo cp -rf . /var/deploy_dashboard/
+          sudo cp -r ./dist /var/deploy_dashboard/
           echo "SHIELD Dashboard is upto date! Deployment successful."
