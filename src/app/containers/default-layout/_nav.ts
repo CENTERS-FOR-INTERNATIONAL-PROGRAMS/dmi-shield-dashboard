@@ -2,9 +2,9 @@ import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'Cholera',
+    name: 'Program dashboards',
     url: '/sarscov/about',
-    icon: 'fa fa-virus-covid',
+    icon: 'fa-solid fa-table-columns',
     class: 'view-drawer--link'
   }
   // {
@@ -13,7 +13,7 @@ export const navItems: INavData[] = [
   //   icon: 'fa fa-temperature-full',
   //   class: 'view-drawer--link'
   // },
-  // {
+  // {<i class="fa-solid fa-table-columns"></i>
   //   name: 'SARI/ILI',
   //   url: '/sari_ili/about',
   //   icon: 'fa fa-lungs-virus',
