@@ -3,7 +3,7 @@
   "version": "1.0",
   "copyright": "",
   "license": "MIT",
-  "author": "G. Miller",
+  "author": "WandM",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
