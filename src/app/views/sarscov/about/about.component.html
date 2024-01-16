@@ -1,9 +1,51 @@
-<c-card class="view-border--none">
 
-  
-  <iframe title="Cholera_v3" width="100%" height="800"
-  src="https://app.powerbi.com/view?r=eyJrIjoiMzYwYWVjZTYtMjRmYy00ZmQyLTkwY2UtZTYxMDU4YmVhNzNlIiwidCI6ImE4MmQ5Y2U3LTcwZDQtNGMzOS1iMmUyLTU5ZmQwODA0NjQ1YiIsImMiOjh9"
-  frameborder="0"
-  allowFullScreen="true"></iframe>
 
-</c-card>
+<c-nav variant="tabs">
+  <a [active]="true" [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="0" cNavLink>IDSR Climate Sensitive Diseases</a>
+  <a [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="1" cNavLink>Cholera</a>
+  <a [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="2" cNavLink>Sari</a>
+  <a [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="3" cNavLink>Covid Mortality</a>
+  <a [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="4" cNavLink>AFI</a>
+</c-nav>
+<c-tab-content #tabContent="cTabContent">
+  <c-tab-pane class="p-3">
+    <c-card class="view-border--none">
+
+
+
+      <iframe title="IDSR Disease Overlay v3 (3)" width="100%" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiOGFjMjFhNjQtMmM5OC00MjhiLWFmNDEtNWMwNjI5NTFmNjdjIiwidCI6ImE4MmQ5Y2U3LTcwZDQtNGMzOS1iMmUyLTU5ZmQwODA0NjQ1YiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+      </c-card>
+  </c-tab-pane>
+  <c-tab-pane class="p-3">
+    <iframe title="Cholera_v3" width="100%" height="800"
+
+        src="https://app.powerbi.com/view?r=eyJrIjoiMzYwYWVjZTYtMjRmYy00ZmQyLTkwY2UtZTYxMDU4YmVhNzNlIiwidCI6ImE4MmQ5Y2U3LTcwZDQtNGMzOS1iMmUyLTU5ZmQwODA0NjQ1YiIsImMiOjh9"
+        frameborder="0"
+         allowFullScreen="true">
+
+      </iframe>
+  </c-tab-pane>
+  <c-tab-pane class="p-3">
+    <c-card class="view-border--none">
+      <iframe title="SARI_ILI_Dashboard_v1" width="100%" height="800"
+      src="https://app.powerbi.com/view?r=eyJrIjoiMTBkZjU0NjYtZTRkZS00ZmUxLWIyYzItMjdjNmFiODliNWY5IiwidCI6ImE4MmQ5Y2U3LTcwZDQtNGMzOS1iMmUyLTU5ZmQwODA0NjQ1YiIsImMiOjh9"
+      frameborder="0" allowFullScreen="true"></iframe>
+    </c-card>
+  </c-tab-pane>
+
+  <c-tab-pane class="p-3">
+    <c-card class="view-border--none">
+      <iframe title="MortalityDashboard_v1" width="100%" height="800"
+      src="https://app.powerbi.com/view?r=eyJrIjoiY2JlOTUxYzItZjUwMy00OTczLWExNmYtZmI2NzhkNjY5YzY2IiwidCI6ImE4MmQ5Y2U3LTcwZDQtNGMzOS1iMmUyLTU5ZmQwODA0NjQ1YiIsImMiOjh9"
+      frameborder="0" allowFullScreen="true">
+    </iframe>
+    </c-card>
+  </c-tab-pane>
+  <c-tab-pane class="p-3">
+    <c-card class="view-border--none">
+      <iframe title="AFIDashboard_v1" width="100%" height="800"
+      src="https://app.powerbi.com/view?r=eyJrIjoiNDlkNTU4MDItMjFkNy00MjUzLTk4NzMtYmVmNjA3YTA0YzBiIiwidCI6ImE4MmQ5Y2U3LTcwZDQtNGMzOS1iMmUyLTU5ZmQwODA0NjQ1YiIsImMiOjh9"
+      frameborder="0" allowFullScreen="true"></iframe>
+    </c-card>
+  </c-tab-pane>
+</c-tab-content>
